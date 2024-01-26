@@ -36,7 +36,6 @@ app.get('/api/users', (req, res) => {
     };
     users.push(user);
   }
- 
   const filePath = 'users.json';
   fs.writeFileSync(filePath, JSON.stringify(users, null, 2));
 
@@ -45,5 +44,5 @@ app.get('/api/users', (req, res) => {
 
 
 app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
+  console.log(`Server is running at ${port}`);
 });
