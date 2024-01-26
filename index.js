@@ -38,7 +38,6 @@ app.get('/api/users', (req, res) => {
   }
   const filePath = 'users.json';
   fs.writeFileSync(filePath, JSON.stringify(users, null, 2));
-
   res.json(users);
 });
 
