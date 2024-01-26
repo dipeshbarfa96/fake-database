@@ -14,7 +14,7 @@ app.get('/api/users', (req, res) => {
 
   for (let i = 0; i < numberOfUsers; i++) {
     const user = {
-      username: chance.name(),
+      username: chance.name(),  
       gender: chance.gender(),
       email: chance.email(),
       birthdate: chance.birthday(),
