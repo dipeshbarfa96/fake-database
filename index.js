@@ -10,6 +10,7 @@ const users = [];
 
 app.get('/api/users', (req, res) => {
   const numberOfUsers = 20;
+// add some feature 
 
   for (let i = 0; i < numberOfUsers; i++) {
     const user = {
