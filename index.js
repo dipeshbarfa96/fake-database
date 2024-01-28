@@ -9,7 +9,7 @@ const port = 4000;
 const users = [];
 
 app.get('/api/users', (req, res) => {
-  const numberOfUsers = 10;
+  const numberOfUsers = 20;
 
   for (let i = 0; i < numberOfUsers; i++) {
     const user = {
